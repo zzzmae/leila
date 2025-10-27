@@ -10,9 +10,9 @@ export class App {
   protected readonly hearts = signal<Array<{ size: number; left: number; top: number }>>([]);
 
   protected readonly showOverlay = signal(false);
-  protected readonly overlayImageUrl = signal<string>('assets/mini-kama.jpg');
+  protected readonly overlayImageUrl = signal<string>('assets/leila.png');
   private audio?: HTMLAudioElement;
-  private readonly audioUrl = 'assets/tonight-music.mp3';
+  private readonly audioUrl = 'assets/elemeimin-asylym.mp3';
 
   constructor() {
     // Generate many hearts of different sizes

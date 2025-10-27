@@ -54,6 +54,34 @@ ng e2e
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
+## Deployment to Netlify
+
+This project is configured for deployment to Netlify.
+
+### Automated Deployment via Git
+
+1. Push your code to GitHub/GitLab
+2. Connect your repository to [Netlify](https://app.netlify.com)
+3. Netlify will automatically build and deploy your site
+4. Configuration is already set up in `netlify.toml`
+
+### Manual Deployment
+
+1. Build the project:
+
+   ```bash
+   npm run build
+   ```
+
+2. Deploy the `dist/hearts-app` folder to Netlify
+
+### Netlify Configuration
+
+- **Build command**: `npm run build`
+- **Publish directory**: `dist/hearts-app`
+- **Node version**: 20 (specified in `.nvmrc`)
+- **Rewrites**: All routes redirect to `/index.html` for SPA support
+
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

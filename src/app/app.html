@@ -6,7 +6,11 @@
               [style.left.px]="h.left" [style.top.px]="h.top"
               aria-label="heart"></button>
     }
-    <button class="heart center-heart" (click)="openOverlay()" aria-label="main heart"></button>
+    <button class="heart center-heart" (click)="openOverlay()" aria-label="main heart">
+      @if (!showOverlay()) {
+        <span class="heart-hint">кликай сюда!</span>
+      }
+    </button>
   </div>
 
   @if (showOverlay()) {
