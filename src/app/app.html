@@ -16,6 +16,7 @@
   @if (showOverlay()) {
     <div class="overlay" (click)="closeOverlay()">
       <div class="overlay-content" (click)="$event.stopPropagation()">
+        <h1 class="neon-text">не унывай, детка, все будет хорошо</h1>
         <img class="pulsing-image" [src]="overlayImageUrl()" alt="Love" />
       </div>
     </div>

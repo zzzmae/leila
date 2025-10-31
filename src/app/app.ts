@@ -12,7 +12,7 @@ export class App {
   protected readonly showOverlay = signal(false);
   protected readonly overlayImageUrl = signal<string>('assets/leila.png');
   private audio?: HTMLAudioElement;
-  private readonly audioUrl = 'assets/elemeimin-asylym.mp3';
+  private readonly audioUrl = 'assets/love-me.mp3';
 
   constructor() {
     // Generate many hearts of different sizes
